@@ -13,7 +13,7 @@
 
 ---
 
-## ✨ 特性
+## 特性
 
 - **完全从零实现**:BPE 分词器、RoPE 旋转位置编码、RMSNorm、SwiGLU、多头因果自注意力、AdamW、cosine 学习率调度、梯度裁剪、checkpoint —— 全部手写,不调高层 API。
 - **一条命令跑实验**:baseline、学习率扫描、batch size 扫描、四类架构消融、文本生成,统一子命令入口。
@@ -23,7 +23,7 @@
 
 ---
 
-## 🎬 生成示例
+## 生成示例
 
 模型(验证损失 1.30)在 prompt `"Once upon a time"` 下的生成(temperature=0.8, top-p=0.9):
 
@@ -40,7 +40,7 @@ And they both lived happily ever after.
 
 ---
 
-## 📊 实验结果
+##  实验结果
 
 > 完整实验记录见 [`exp/experiment_log.md`](exp/experiment_log.md)。
 
@@ -93,7 +93,7 @@ And they both lived happily ever after.
 
 ---
 
-## 🧠 模型架构
+##  模型架构
 
 | 组件 | 设置 |
 | ---- | ---- |
@@ -109,7 +109,7 @@ And they both lived happily ever after.
 
 ---
 
-## 🚀 快速开始
+## 快速开始
 
 ```bash
 # 1. 安装依赖（使用 uv）
@@ -146,7 +146,7 @@ uv run train_experiment.py overfit_test
 
 ---
 
-## 📁 项目结构
+##  项目结构
 
 ```
 StoryLM/
@@ -165,7 +165,7 @@ StoryLM/
 
 ---
 
-## 🔑 关键结论
+##  关键结论
 
 1. **超参**:最佳学习率 3e-3,baseline 验证损失 1.30;batch size 存在甜点区(16),并非越大越好。
 2. **稳定性**:训练稳定性来自梯度裁剪与 AdamW 自适应的叠加,单调加大 lr 不足以发散——这是一个反直觉但可复现的工程发现。
@@ -179,7 +179,7 @@ Python · PyTorch(仅用张量与 autograd,不用高层 nn 层)· NumPy · matpl
 
 ---
 
-## 📚 参考
+##  参考
 
 - Eldan & Li, *TinyStories: How Small Can Language Models Be and Still Speak Coherent English?* (2023) —— 训练数据集
 - Su et al., *RoFormer: Rotary Position Embedding* (2021) —— RoPE
