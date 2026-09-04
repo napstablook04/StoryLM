@@ -33,6 +33,33 @@ def run_cross_entropy(
 
 
 
+def run_cross_entropy_ignore_index(
+    inputs: torch.Tensor,       # shape: [N, vocab_size]，logits（未归一化）
+    targets: torch.Tensor,      # shape: [N]，整数类别；ignore_index 位置不计损失
+    ignore_index: int = -100,
+) -> torch.Tensor:
+    """带 label mask 的交叉熵（SFT 用）：先过滤掉 ignore_index 的行再做均值。
+
+    数值稳定化手法与 run_cross_entropy 完全一致（减 max 再 logsumexp）；
+    均值只在有效 token 上取，所以 prompt / padding 位置不贡献梯度。
+    """
+    valid = targets != ignore_index
+    if not valid.any():
+        return inputs.sum() * 0.0  # 无有效 token：返回 0 且保持计算图连通
+
+    inputs = inputs[valid]
+    targets = targets[valid]
+
+    max_logits = torch.max(inputs, dim=-1, keepdim=True).values
+    inputs = inputs - max_logits
+    log_sum_exp = inputs.exp().sum(dim=-1).log()
+    logits_target = inputs[torch.arange(inputs.shape[0]), targets]
+    loss = -logits_target + log_sum_exp
+    return loss.mean()
+
+
+
+
 def run_gradient_clipping(
     parameters: Iterable[torch.nn.Parameter],
     max_l2_norm: float,

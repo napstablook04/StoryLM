@@ -34,6 +34,15 @@ module-root = ""
 package = true
 python-preference = "managed"
 
+[tool.uv.sources]
+# Windows (GTX 1050 Ti / Pascal): PyPI default builds dropped Pascal kernels
+# since torch 2.8; this cu126 wheel (Aliyun mirror) still ships them.
+# The Aliyun pytorch-wheels page is not a PEP 503 index, so pin by direct URL.
+# Linux (server) keeps PyPI. Remember to bump this URL when upgrading torch.
+torch = [
+  { url = "https://mirrors.aliyun.com/pytorch-wheels/cu126/torch-2.11.0%2Bcu126-cp312-cp312-win_amd64.whl", marker = "sys_platform == 'win32' and python_full_version < '3.13'" },
+]
+
 [tool.pytest.ini_options]
 log_cli = true
 log_cli_level = "WARNING"

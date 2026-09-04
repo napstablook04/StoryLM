@@ -1,0 +1,402 @@
+# Probe eval: v5_round3_final
+
+checkpoint: `checkpoints/sft_expanded_v3_best_final.pt`
+
+| band | TMR@2 | SSS | TAS |
+| --- | --- | --- | --- |
+| control(in-list) | 80% | 0.12 | 0.45 |
+| unseen-high-freq | 73% | 0.11 | 0.42 |
+| unseen-mid-freq | 88% | 0.10 | 0.48 |
+| unseen-oov | 0% | 0.00 | 0.00 |
+
+## Per-topic
+
+| topic | corpus_hits | TMR@2 | mention | SSS | TAS |
+| --- | --- | --- | --- | --- | --- |
+| bird | 16601 | 100% | 1.00 | 0.26 | 0.63 |
+| cake | 2232 | 100% | 1.00 | 0.14 | 0.57 |
+| park | 18427 | 80% | 0.73 | 0.04 | 0.39 |
+| sharing | 11101 | 40% | 0.40 | 0.04 | 0.22 |
+| moon | 463 | 80% | 0.80 | 0.12 | 0.46 |
+| school | 1109 | 40% | 0.27 | 0.02 | 0.14 |
+| king | 625 | 100% | 1.00 | 0.16 | 0.58 |
+| baby | 1155 | 80% | 0.80 | 0.02 | 0.41 |
+| farm | 1187 | 80% | 0.80 | 0.20 | 0.50 |
+| beach | 1212 | 60% | 0.67 | 0.16 | 0.41 |
+| dragon | 431 | 100% | 1.00 | 0.10 | 0.55 |
+| robot | 273 | 100% | 1.00 | 0.02 | 0.51 |
+| pirate | 273 | 80% | 0.73 | 0.02 | 0.38 |
+| train | 594 | 100% | 1.00 | 0.18 | 0.59 |
+| rainbow | 706 | 60% | 0.60 | 0.16 | 0.38 |
+| zorp | 0 | 0% | 0.00 | 0.00 | 0.00 |
+
+## Generated stories
+
+### bird (control(in-list), corpus_hits=16601)
+
+**sample 0**: Once upon a time, there was a little girl named Lily. She had a big, red ball that she loved to play with. One day, she went outside to play with her ball, but it was not there. She looked around and saw a little bird. The bird had a hurt wing and could not fly.
+Lily felt sad for the bird and wanted to help it. She thought of a plan to make the bird feel better. She took her big, red ball and threw it up in the air. The ball caught the bird and started to play with it. The bird was very happy and started to sing a beautiful song.
+As the bird sang, something unexpected happened. The bird started to grow bigger and bigger! It
+
+**sample 1**: One day, a little dog named Max went for a walk. Max saw a big red alarm on a door. He did not know what it was. Max was a bit ignorant, so he wanted to know.
+Max heard a small voice from the alarm. "Help me, please!" "I am stuck!" Max looked around and saw a bird in the tree. The bird was making the alarm go away. Max wanted to help the bird.
+Max said to the bird, "Why are you stuck?" The bird said, "I am stuck, and I can't fly away." Max wanted to help the bird, so he thought of a plan.
+Max used his big paws to break the alarm. The bird was free,
+
+**sample 2**: Once upon a time, there was a pretty bird. The bird liked to travel. One day, the bird flew far away from its home.
+On the way, the bird saw a big tree. The tree had many pretty leaves. The bird flew up and saw a small house. Inside the house, there were many pretty things.
+The bird met a boy. The boy was nice. They played together and had fun. The bird was happy. The boy and the bird became friends. They went back home together.
+
+**sample 3**: Once upon a time, there was a little girl named Lily. She had a big, blue book called a dictionary. Lily liked to look at the words in her dictionary. One day, she saw a pretty bird outside her window. The bird was very graceful, so Lily wanted to be friends with it.
+Lily opened the window and said, "Hi, bird! I like your pretty dictionary!" The bird looked at the dictionary and started to sing. Lily was very happy. She clapped her hands and laughed as she listened to the bird's beautiful song.
+As the bird sang, something unexpected happened. The bird changed into a beautiful butterfly! Lily was so surprised. The butterfly flew around Lily and her dictionary, making it even more pretty
+
+**sample 4**: Once upon a time, there was a little bird who lived in a birdcage. The bird was fine and small. The birdcage was in a big tree. The bird liked to sing and play with its friends.
+One day, the bird tried to escape from the cage. It was very hard for the bird. The bird tried and tried, but it could not escape. It was very sad. The bird's friends came to help it.
+With the bird's help, the bird escaped from the cage. The bird was very happy. It played with its friends and sang songs again. The bird and its friends lived happily ever after.
+
+### cake (control(in-list), corpus_hits=2232)
+
+**sample 0**: Once upon a time, there was a little girl named Lily. She loved to eat yummy food. One day, her mom made a big cake for her. Lily was very happy.
+Lily wanted to eat the cake, but her mom said, "No, Lily. You must wait until after dinner." Lily was sad, but she knew she had to wait. She played with her toys and waited.
+After dinner, Lily's mom gave her a yummy cake. Lily was so happy! She ate the cake and it was very yummy. She knew that waiting was worth it.
+
+**sample 1**: One day, a little dog named Max went to the park. Max saw a big cake on a table. He wanted to eat it, but it was on a high shelf. Max looked around but could not see any cake. He felt sad.
+Max saw his friend, a big bird named Sam. Max asked Sam, "Can you help me get the cake?" Sam said, "Yes, let's find a box to get the cake." They looked all around the park for a box.
+Then, Max found a small box. He opened the box and saw a big cake inside. They were so happy! But just as they were about to take the cake out, a small mouse named Max came out from behind the cake.
+
+**sample 2**: Once upon a time, there was a pretty girl named Lily. She loved to mix things in her kitchen. One day, she decided to mix yummy food. She took a big spoon and started to mix.
+Lily mixed and mixed. She made a big cake. She was very happy. She put the cake in the oven to bake. But, she forgot to close the oven door. The cake did not taste good when it was done.
+When the cake was done, Lily took it out of the oven. It was not pretty, but it was still good. She shared the cake with her family. Everyone loved it. Lily learned that it is important to be careful when mixing.
+
+**sample 3**: Once upon a time, there was a little girl named Lily. She had a nosy cat named Max. Max liked to look at everything and ask questions. Lily loved Max very much.
+One day, Lily's mom made a big cake. Lily wanted to taste the cake. She took a big bite and tasted something funny. Max looked at Lily and said, "I don't like the cake!"
+Lily felt sad and sorry for Max. She said sorry to her mom and Max. They all laughed and enjoyed the cake together. From that day on, Lily learned to be more careful with what she ate.
+
+**sample 4**: Once upon a time, there was a little girl named Amy. She loved to eat delicious cake. One day, Amy's mom made a big, delicious cake for her. Amy was very happy and excited to share her cake with her friends.
+Amy's little brother, Tim, saw the cake and wanted it too. He took a big bite and started to cry. Amy felt bad and said, "Tim, I am sorry. I did not want to spoil your cake. Please forgive me for taking it."
+Tim stopped crying and said, "I forgive you, Amy. We all make mistakes. Let's make a new cake together!" They mixed the cake and put it in the oven to bake. When it was done, they
+
+### park (control(in-list), corpus_hits=18427)
+
+**sample 0**: Once upon a time, there was a little girl named Lily. She loved to play in the park with her friends. One day, she saw a big, pretty fountain in the park. The water in the fountain went up and down. Lily wanted to touch the water, but she was scared.
+Lily's friend, Tim, saw her looking at the fountain. He said, "Lily, be careful! The fountain can be dangerous. We should not touch it." But Lily didn't listen. She wanted to touch the water.
+Lily went closer to the fountain. She touched the water, but she slipped and fell. She got hurt and cried. Tim came to help her. He said, "I told you not to touch the
+
+**sample 1**: One day, a little dog named Max went to the park with his family. Max was very happy to play outside. He saw a big, messy pile of dirt and started to dig. Max thought it was fun to jump in the dirt.
+Max's mom saw him in the messy pile and said, "Max, you need to behave and stop in the dirt!" Max felt sad, but he knew his mom was right. He knew he had to listen to his mom.
+A nice lady saw Max and said, "Don't worry, Max. We will clean the park and make the park look nice again." Max and his mom worked together to clean the park. When they were done, the park looked beautiful again. Max was
+
+**sample 2**: Once upon a time, there was a pretty girl named Lily. She loved to play outside with her friends. One day, while playing in the park, they saw a big maze. Lily and her friends wanted to find the way out and play in the maze.
+As they went into the maze, they met a friendly dog. The dog said, "Woof! Woof! Can I play with you?" Lily and her friends were surprised but happy to have a new friend. They all played together and had lots of fun.
+Then, something unexpected happened. The dog started to grow bigger and bigger! Suddenly, he turned into a beautiful butterfly. Lily and her friends were so surprised! The butterfly said, "Thank you for finding me!
+
+**sample 3**: Once upon a time, there was a little girl named Lily. She had a lot of toys and equipment to play with. One day, she went to the park with her mom. At the park, she met a boy named Tim. Tim saw Lily's equipment and said, "Wow, you have so many toys! Can I play with your play?" Lily nodded and they both played with the equipment. They had lots of fun together.
+After playing, they got hungry. Lily's mom gave them some yummy snacks to eat. But as they ate, Lily started to complain. "I don't feel good now," she said. Tim agreed, but only an hug from his mom. They decided to play with the equipment again. This
+
+**sample 4**: Once upon a time, there was a little train who loved to go on journeys. One day, the train set out on a long adventure to a big park. In the park, there were many kids playing and laughing. The train went fast, making steam.
+In the park, the train met a nice girl named Lily. Lily said, "Hello, train! Do you want to play with me?" The train stopped and said, "Yes, I would love to play with you, Lily!" So, the train and Lily played together all day long.
+When it was time to go home, Lily said, "Thank you, train, for playing with me." The train felt very happy and proud. From that day on,
+
+### sharing (control(in-list), corpus_hits=11101)
+
+**sample 0**: Once upon a time, there was a little girl named Lily. She had a big, red ball that she loved to play with. One day, she saw a boy named Tim who was sad. Lily wanted to make him happy, so she thought of a fun idea.
+Lily said to Tim, "Let's play a game. We can take turns to kick the ball and try to score a goal." Tim liked the idea and they started to play. They took turns kicking the ball and trying to score.
+After a while, Tim kicked the ball very hard. It went very high and very high. Tim was so happy that he scored a goal. Lily was happy too because she helped her friend. They both learned that sharing and
+
+**sample 1**: One day, a little dog named Max went to play outside. Max saw a big red alarm on the ground. He did not know what it was. Max was a bit ignorant, so he just had to find out.
+Max went to his friend, a cat named Luna. "Did you hear about the alarm?" Max asked. Luna shook her head and said, "No, but let's find out!" They went to see if there was any alarm.
+When they got closer, they saw a big bird holding the alarm in its beak. The bird flew away with the alarm! Max and Luna were very happy. They learned that sometimes, they need to share what they have is not important.
+
+**sample 2**: Once upon a time, there was a pretty girl named Lily. She loved to play with her flute. One day, she went to the park to play in the trees.
+While she was playing, she saw a little bird. The bird was very happy and sang a sweet song. Lily liked the song and wanted to share it with her new friend, the bird.
+Lily took the bird to her home and showed her mom. Her mom said, "Let's pray and make a gift for the bird!" They prayed together and hoped that the bird would come back. But the bird did not come back. Lily was sad, but she learned that sometimes, it is better to share than to keep things for herself.
+
+**sample 3**: Once upon a time, there was a little girl named Lily. She had a lot of toys and friends to play with. One day, she found a brilliant shiny gem in her garden. It was so pretty and shiny! Lily's friend, Tom, saw the gem and said, "That's a nice gem, Lily! Let's share it!"
+Lily and Tom took turns playing with the gem. They would throw it, kick it, and watch it fly through the air. They were so happy to share the brilliant gem with all their friends.
+As they played, a little boy named Sam saw them. Sam asked, "Can I play with you and the gem?" Lily and Tom said, "Yes, let's all play
+
+**sample 4**: Once upon a time, there was a little train who loved to go on journeys. One day, the train saw a big hill. It was a little difficult to go up the hill alone, but the train wanted to try.
+The train started to go up the hill. It went slow and steady. But then, the train started to feel tired. The train wanted to go back down the hill, but it was still far from its home.
+The train tried to go faster, but it was too difficult. The train was stuck at the top of the difficult hill, and it did not become the best at going up. The train was sad, and it wished it could go back home, but it could not.
+
+### moon (unseen-high-freq, corpus_hits=463)
+
+**sample 0**: Once upon a time, there was a little boy named Tim. Tim loved to play outside in the sun. One day, he saw a big, round moon in the sky. The moon was very pretty and made Tim very happy.
+Tim wanted to tell his friend, Sam, about the moon. He ran to Sam's house and knocked on the door. Sam opened the door and said, "Hi, Tim! What do you want to tell me?" Tim said, "I want to tell you about the moon, Sam!"
+Sam was very excited to see the moon. They both went outside to look at the moon together. They saw the moon shine and sparkle in the night sky. Tim and Sam were very happy to share the
+
+**sample 1**: One day, a little star named Sam was feeling restless. He wanted to learn about the moon. He asked his friend, the moon, "How can I learn about the moon today?" The moon said, "I can help you, Sam. We will look for it together."
+So, Sam and the moon went to look for the moon. They asked their friends and the moon said, "We cannot find the moon. We are sad." Sam and the moon asked the moon, "Do you believe we can find the moon?" The moon said, "Yes, we do. Let's ask the moon."
+They asked the moon, "Can you please help us find the moon?" The moon said, "I cannot talk,
+
+**sample 2**: Once upon a time, there was a pretty moon in the sky. The moon was big and bright. It was very old and had many colors. The moon was friends with the stars. They liked to play together in the sky.
+One day, the moon said, "I am so pretty, isn't it?" The stars said, "Yes, we are pretty, but we are still good to gaze at." The moon felt sad because it wanted to be pretty like the stars.
+Then, the moon had an idea. "Let's change colors!" said the moon. So, the moon turned blue and the stars started to shine. They were all happy and played together in the sky. The moon learned that being pretty is not
+
+**sample 3**: Once upon a time, there was a little girl named Lily. She had a big, tough teddy bear named Mr. Bear. Every night, Lily would hug Mr. Bear before she went to sleep.
+One day, Lily's mom told her it was time to clean her room. Lily did not want to clean her room, but she knew she had to. So, she asked Mr. Bear, "Can you please clean my room, please?" Mr. Bear smiled and said, "Of course, Lily!"
+As they cleaned, Lily saw that her toy box was not so tough anymore. She was very happy and thanked Mr. Bear for his help. The moral of the story is that if we keep our things clean and tough
+
+**sample 4**: Once upon a time, there was a little train who loved to go on adventures. One day, the train set out on a long adventure and came across a big, round moon.
+The moon was so big and light that it lit up the sky. But suddenly, the moon started to fade and disappear.
+The little train was embarrassed. It had been so close to the moon and now it was gone.
+The little train was so sad and worried that the moon was gone. But then, the moon came back and it had a big smile on its face.
+The little train was so happy when it saw the moon again. The moon had been back in the sky, even though it had been so far away.
+The
+
+### school (unseen-high-freq, corpus_hits=1109)
+
+**sample 0**: Once upon a time, there was a little girl named Lily. She had a big, soft mattress in her room. Lily loved to jump on her mattress and play with her toys.
+One day, Lily's friend, Tim, came to play. They played with their toys and had lots of fun. But then, Tim accidentally stepped on Lily's mattress. "Ouch!" he cried. Lily was sad and didn't want to play anymore.
+Lily's mom saw her crying and asked, "What's wrong, Lily?" Lily told her mom about Tim's hurt mattress. Her mom said, "Don't worry, we can fix it." They worked together to fix the mattress. After they were done, Lily said, "Thank you
+
+**sample 1**: One day, a little boy named Tim went to school. He was a bit scared because it was his first day at school. Tim saw a big stage where kids were going to perform. He wanted to feel ready for success.
+Tim's teacher, Miss Lily, told him, "Do your best and make your moves great." Tim did his best and he went on the stage. He was a good learner and his moves were incredible.
+During the show, Tim was going very fast. But then, he tripped and fell on the floor. His teacher came and helped him up. Tim said, "I'm okay, Miss Lily. I still love you. When you are ready for your goals, you will do great." Miss Lily
+
+**sample 2**: Once upon a time, there was a little boy named Tim. Tim loved to play with his football. One day, while playing, he lost his football. He was very sad.
+Tim asked his friend, Sue, "Did you see my football?" Sue said, "No, but I can help you find it." They looked and looked, but they could not find the football.
+Then, Tim saw a big tree. He thought it was his football under the tree. He asked Sue, "Can you lend me your football, please?" Sue said, "Yes, I will lend you my football." They played happily together and became best friends.
+
+**sample 3**: Once upon a time, there was a little girl named Lily. She had a lot of clothes, but she did not like to wear them. She would say, "I hate wearing them!" or "No, they are mine!"
+One day, her friend Tom came to play at school. Tom saw Lily's clothes and said, "Lily, you look different. I like your clothes. They are original and fun!" Lily smiled and said, "Yes, Tom, you are right! I like your clothes too."
+Lily and Tom played together at school. They ran, they jumped, and they laughed. Lily did not say she liked the clothes. Later, Lily's mom told her which clothes was special, and Lily liked them
+
+**sample 4**: Once upon a time, there was a little train who loved to go on journeys. He would go up hills, explore the jungle, and sometimes even go through icy lands. One day, however, he was feeling extra brave and decided to take a chance and explore further than anything else was possible.
+So the little train kept going until he reached a icy lake. He felt so excited and wanted to go around in the icy water. But suddenly he felt a sharp pain in his leg and his pain was even more sore. He had a start that didn't work out. 
+The little train didn't know what to do and he called out for help. Luckily, two friends, a brave and brave knight, heard him and came to
+
+### king (unseen-high-freq, corpus_hits=625)
+
+**sample 0**: Once upon a time, there was a king who had a big, shiny crown. He loved his crown very much. One day, he went to the park to play with his friends.
+While playing, the king's crown fell off his head. He was very sad. His friends saw him and wanted to help. They all looked for the crown, but they could not find it.
+Then, a little girl found the crown under a tree. She gave it back to the king. The king was very happy. He put the crown on his head and danced around the park. The little girl and her friends played all day long.
+
+**sample 1**: Once upon a time, there was a king who had a big, shiny crown. He wore it every day because it made him very happy. But the king was a bit ignorant. He did not know that it was important to wear the crown when it was not his.
+One day, a little girl came to the king's castle. She wore the crown and said, "King, I lost my king. Can you help me find him?" The king looked at the girl and said, "You must repeat this: 'King, you must wear the crown'."
+The little girl repeated the words, "King, you look where I wear the crown." Then, something unexpected happened. A big bird flew down and
+
+**sample 2**: Once upon a time, there was a king who had a very big castle. He was very excited because he was going to marry a pretty king. The pretty king was very happy to have a king who loved him very much.
+One day, the pretty king said to the pretty king, "I want to marry you, but I don't have a lot of money." The pretty king thought for a moment and then said, "I know! You can have a big party with lots of food and games!"
+The pretty king was happy and told all the people about the party. They were all excited for the party. But, the sky was dark and it started to rain very hard. The pretty king and the pretty king were scared
+
+**sample 3**: Once upon a time, there was a king. The king was very kind. He had a big, shiny crown. The king was always ready to help others.
+One day, the king saw a little girl. She was sad. The king asked, "Why are you sad?" The little girl said, "I lost my toy." The king wanted to help, so they looked for the toy together.
+They looked under big trees and near the pond. Then, they found the toy near a small pond. The little girl was happy again. The king was happy too. They both knew that being kind and helping others is a good thing. And that's how the king and the little girl became best friends.
+
+**sample 4**: Once upon a time, there was a king. The king was not ordinary. He had a big, shiny crown. Everyone in the land knew him as the king.
+One day, a little girl said, "King, I want to be your friend." The king smiled and said, "Yes, little girl. My crown is very special to me."
+The little girl and the king became good friends. They played and laughed together. They were happy. And they lived happily ever after.
+
+### baby (unseen-high-freq, corpus_hits=1155)
+
+**sample 0**: Once upon a time, there was a little girl named Lily. She had a big, soft teddy bear named Mr. Bear. Lily loved Mr. Bear very much. They played together every day.
+One day, Lily and Mr. Bear went to the park. They played on the swings and the slide. Lily was very happy. But then, she saw a big, disgusting bug on the ground. Lily was scared. She did not want to touch the bug.
+Lily ran to her mom and told her about the bug. Her mom said, "Don't worry, Lily. The bug is just a little bug. It won't hurt you." Lily felt better. She went back to play with Mr. Bear and the disgusting bug
+
+**sample 1**: One day, a baby was playing with his toys. He was very happy. But then he heard a loud noise outside. He looked out the window and saw a big truck. It was going to destroy everything. 
+The baby was scared and started to cry. He wanted to watch the truck, but he could not.
+Then, something unexpected happened. A big flash of light came from the truck. It stopped so the baby could watch. 
+He looked out the window and saw the truck. He was happy he was safe. He watched the truck and learned that he was safe and that he could watch the truck pass by now.
+
+**sample 2**: Once upon a time, there was a pretty garden where many animals lived. In this garden, there was a baby bird who liked to rest. The baby bird was happy and loved to play with its friends.
+One day, a little girl came to the garden. She saw the pretty bird and wanted to take it home. The baby bird did not want to go, but the girl did not listen to it. She walked away from the garden with the pretty bird.
+The little girl played near the bird all day. She did not rest or watch where she was going. The pretty bird was sad, but it did not stop making the girl happy. In the end, the pretty bird found a new home and rest. The little girl
+
+**sample 3**: Once upon a time, there was a little girl named Lily. She had a big, tough teddy bear named Mr. Bear. Lily always loved to hug Mr. Bear when she was sad.
+One day, Lily's mom said she could get a new baby. Lily was very happy. She waited for a baby to come and play with her. But when the baby came, it was not a baby. It was a baby big, soft teddy bear! Lily was so surprised.
+Lily and Mr. Bear played and laughed together. They had so much fun. But then, something unexpected happened. The baby started to talk! The baby said, "I miss mom." Lily and Mr. Bear were very surprised, but they were happy
+
+**sample 4**: Once upon a time, there was a little baby who lived with his mom and dad. The baby liked to play with his toys, but he was often frustrated sometimes. He wanted to do something different.
+One day, the baby's mom and dad took him on an adventure. They went to a big park where they could play and have fun. The baby was very happy and played with his friends, like the big slide and the swings.
+But then, the baby saw a big, mean dog. The dog wanted to take his toys! The baby tried to save his toys, but the dog was too strong. The baby got very sad and cried. His mom and dad were sad too, but they were not happy either. The
+
+### farm (unseen-high-freq, corpus_hits=1187)
+
+**sample 0**: Once upon a time, there was a farm. On the farm, there was a big red barn. In the barn, there lived a cow named Bessie. Bessie was a very good cow. She liked to help her friends.
+One day, Bessie saw a little bird named Chirpy. Chirpy was sad. Bessie asked, "Why are you sad, Chirpy?" Chirpy said, "I can't find my nest. I need it for my nest." Bessie wanted to help Chirpy. She said, "I will help you find your nest, Chirpy."
+Bessie and Chirpy looked all around the farm. They looked in the trees and on the ground. They could not find Chirpy's nest. Chirpy was very sad. Bessie said, "I am
+
+**sample 1**: One day, a little dog named Max went to the farm. Max saw a big red barn. He wanted to play in the barn. Max ran into the barn and started to play. He was having so much fun!
+A rude cat named Tom came to the barn. Tom said, "I don't like this barn. I want to go home." Max said, "No, you can't go home here. It's my home!" Tom didn't like that. He said, "I'm sorry, I just want to play."
+Just then, something unexpected happened. A big wind came and blew through the barn door shut. The wind was so strong that it blew Max and Tom out of the barn! They both landed
+
+**sample 2**: Once upon a time, there was a farmer named Tom. He had a big red barn on his farm. Every day, Tom would go to the barn to work and take care of his animals.
+One day, Tom saw his friend, the cow, sitting on the hay. The cow was sad because she had no food. Tom had an idea to help her. He said, "Let's take some of our animals to the barn to get food for them!"
+The cow liked the idea and they went to the barn together. They brought some food to the cow's farm. The cow was very happy and thanked Tom. She ate the food and said, "Thank you for helping me, Tom. You are a good friend."
+
+**sample 3**: Once upon a time, there was a farm. On the farm, there was an open field. In the field, there were many animals who liked to play.
+One day, a little boy named Tim came to the farm. He saw a big red ball. Tim wanted to kick the ball. So, he kicked the ball hard. The ball went far away and rolled far away.
+The farmer saw Tim and smiled. He said, "Good job, Tim! You kicked the ball so far. Let's go get your ball back!" Tim was happy and followed the farmer. They got the ball back and played together all day.
+
+**sample 4**: Once upon a time, there was a little pony who lived in a big farm. The pony was very eager to explore the other side of the farm, so he started to walk.
+One morning, the pony found a big open field. He was so excited, he ran through the grass and went into the field. It was so beautiful!
+Suddenly, a butterfly flew over. The pony watched, and he was delighted. He chased after the butterfly, chasing it around the farm.
+The butterfly flew so far that he couldn't catch it. Then, he noticed a little chick. He followed the chick as it flew around the open field.
+The little pony was so eager to follow, he ran and ran until he was out
+
+### beach (unseen-high-freq, corpus_hits=1212)
+
+**sample 0**: Once upon a time, there was a little girl named Lily. She loved to play in the sand at the beach. One day, she went to the beach with her mom and dad. They had so much fun playing in the sand and swimming in the water.
+Lily saw a big, pretty shell on the sand. She picked it up and showed it to her mom and dad. They all smiled and thought it was very nice. Lily wanted to keep the shell, so she put it in her pocket.
+Later, Lily and her family went to the beach. They played in the sand and swam in the water. Lily was very happy to have a new shell. She knew that she would always remember the fun day at the beach with
+
+**sample 1**: One day, a little boy named Tim went to the beach with his mom. The beach was big and had many sand. Tim liked to play in the sand and look at the water. He saw a big dog playing in the sand. The dog was very attractive with its spots.
+Tim's mom said, "Tim, don't go near the dog. It's not safe." But Tim did not listen. He wanted to see the dog up close. Tim walked to the dog and touched its fur. The dog did not like that.
+The dog bit Tim's lip. Tim cried and ran back to his mom. His mom felt sad and hugged him. "I told you to not touch the dog," she said. Tim learned
+
+**sample 2**: Once upon a time, there was a pretty beach where the sun would shine in every day. Every day, the sun would rise and go to the beach to play.
+One day, a little girl named Lily went to the beach with her mom. She saw the pretty beach and wanted to play there. Her mom said, "Lily, you can play on the beach, but please be careful."
+Lily played on the beach all day. She made a big sandcastle and found a shiny rock. When it was time to go home, she saw her mom looking at the pretty beach.
+Lily put her bucket and shovel away and said goodbye to the beach. She knew she would come back to play on the pretty beach again soon.
+
+**sample 3**: Once upon a time, there was a little girl named Lily. She had a lot of toys and equipment to play with. One day, she went to the beach with her mom and dad.
+Lily saw a big, soft towel on the shore. She picked it up and started to play with it. She liked the towel so much that she became tired and wanted to rest. She sat on the sand and closed her eyes.
+While Lily was resting, a rude crab came close to her. It pinched her and made her drop the towel. Lily was very sad and her mom and dad took her home. From that day on, she never played with a towel again.
+
+**sample 4**: Once upon a time, there was a little girl who was three years old. She loved playing in the beach. One day, she was playing in the sand when she saw something very shiny. She went closer to see what it was and found a mysterious box. 
+The little girl was very curious so she opened the box. Inside was a beautiful jewel. She was so excited and said: "Wow, this is amazing!" 
+The little girl was so excited that she ran back to her family to show them. But when she got home, her brother Jack was already hiding under the same spot. He had a very harsh voice and he was not very nice. 
+The little girl was sad and asked: "What are you
+
+### dragon (unseen-mid-freq, corpus_hits=431)
+
+**sample 0**: Once upon a time, there was a big dragon. The dragon was very big and strong. He lived in a cave near a small town. The dragon was very nice and liked to help people.
+One day, a little girl named Lily was playing near the dragon's cave. She saw the dragon and was not scared. She walked up to the dragon and said, "Hello, Mr. Dragon! Can you help me? I need to find my toy."
+The dragon looked at Lily and said, "Yes, I can help you. Let's look for your toy together." They looked and looked, but they could not find the toy. The dragon was sad.
+Then, something unexpected happened. The dragon found a big,
+
+**sample 1**: One day, a little dragon was flying in the sky. He saw a big tree and wanted to sit on it. But the dragon saw a foolish cat on the tree.
+"Hello, foolish cat," said the little dragon. "Why don't you sit on me?"
+"I am a silly dragon," said the foolish cat. "I will sit on you if you don't like it."
+The little dragon was very happy. He sat on the tree and they became friends. They played and laughed all day. The foolish cat was not foolish anymore, and they both took a big nap together.
+
+**sample 2**: Once upon a time, there was a big dragon. The dragon was very big and had many colors. He lived in a cave near a far away place. The dragon was not strong, but he was happy. He had many friends who lived near him.
+One day, the dragon had a job to deliver a big box to his friend, the small dragon. The small dragon was very excited to take the box to the friend's house. He thought the friend would like it. But the dragon was too big, and the small dragon was too small.
+As the small dragon walked, he met a mean dragon. The big dragon wanted the big box for himself. He said, "Give me the big box, or I will take
+
+**sample 3**: Once upon a time, there was a big dragon. The dragon was very dangerous. He lived in a cave near the woods. Every day, he would walk around his cave and look for food.
+One day, the dragon saw a little girl. She was lost and scared. The dragon wanted to help her, so he went to her. He said, "I can help you find your way home." The girl smiled and said, "Thank you, dragon."
+The dragon and the girl walked together to find her home. But as they walked, the dragon started to slip on the rocks. He could not get back up. The girl was scared too. The dragon felt sad and went back to his cave, thinking about his dangerous
+
+**sample 4**: Once upon a time, there was a brave dragon who lived in a big cave. He had a lot of friends, but his most of all was his friends. 
+One day, the dragon wanted to share his things with his friends. He invited them to stay with him and shared his toys and snacks.
+Soon, his friends were all friends of the same. They were all having fun together, and they were very hungry.
+The dragon was so hungry that he couldn't eat his food. But then, he saw that his friends were very hungry too. He took some of his food and offered it to them.
+They ate and ate until they were full. Then, they all thanked him for sharing and being so brave.
+
+### robot (unseen-mid-freq, corpus_hits=273)
+
+**sample 0**: Once upon a time, there was a little boy named Tim. Tim had a toy robot that he loved very much. The robot was very old and had a big smile. Tim took the robot with him everywhere he went.
+One day, Tim and his robot went to the park. They played on the swings and the slide. Tim was very happy. But then, Tim saw a big, dangerous dog. The dog was barking and running towards Tim. Tim was scared and didn't know what to do.
+Tim remembered his robot friend's big smile. He thought the dangerous dog might be there. So, Tim took a deep breath and walked towards the dog. The dog saw Tim and stopped barking. Tim picked up his robot and walked
+
+**sample 1**: One day, a little boy named Tim went to play outside. He saw a big red robot. The robot was very slow. Tim wanted to play with the robot, but it was too fast. He felt sad.
+Tim met a girl named Sue. Sue said, "Don't worry, the robot can't very fast. Let's find a way to make it go." They thought and thought. Then, they had an idea. "Let's ask the robot to help us," said Tim.
+Sue and Tim asked the robot to help them. The robot was happy to help. It ran fast and made a loud noise. Tim and Sue were surprised. "Wow, the robot is not slow anymore!" said Sue. The robot
+
+**sample 2**: Once upon a time, there was a robot named Robby. Robby was a crazy robot who loved to play and dance. He had many friends in the town who liked to play with him.
+One day, Robby and his friends were playing in the park. They were running and jumping. Robby's friend, Tim the robot, said, "Robby, I believe there is an emergency!" Everyone was scared, but they wanted to help Tim.
+Robby and his friends went to see what was happening. They found a little girl who was lost and scared. Robby said, "Don't worry, I will help you." They all played together and became good friends. Robby showed the little girl the best road to go home. The little girl was
+
+**sample 3**: Once upon a time, there was a robot. The robot was very enthusiastic. It liked to play with the kids in the park.
+One day, the robot saw the kids playing. They were having so much fun. The robot wanted to play too. It said, "Can I play with you?" The kids were very surprised. They did not know that the robot could talk.
+The robot said, "Yes, you can play with me." The kids were so happy. They played with the robot all day. They had so much fun. The robot was happy it could make friends with the kids. And they all lived happily ever after.
+
+**sample 4**: Once upon a time, there was a robot. The robot was not ordinary. It could talk and change things. The robot had a friend, a little girl named Lily. They played together every day.
+One day, Lily and the robot went for a walk. They saw a big rock. The robot thought the rock was a pretty thing. They both touched the rock and something unexpected happened. The rock started to talk!
+Lily and the robot were surprised. The talking rock said, "Thank you for touching me. I am a magic rock. I will give you one wish for being so nice to me." Lily thought for a moment and wished for a new friend. The magic rock made her wish come true. Lily and the robot
+
+### pirate (unseen-mid-freq, corpus_hits=273)
+
+**sample 0**: Once upon a time, there was a pirate. He was a very brave pirate. He had a big hat and a big smile. He liked to sail on the sea.
+One day, the pirate saw a little girl. She was lost and scared. The pirate wanted to help her. He said, "Don't be scared. I will help you." The little girl smiled and said, "Thank you, pirate."
+The pirate and the little girl walked together. They found the little girl's home. The little girl's mom was happy. The pirate was happy too. They all became good friends.
+
+**sample 1**: One day, a pirate named Tom went to the park. He saw a big tree and wanted to climb it. Tom was very good at climbing trees.
+Tom saw a swing and wanted to play. He sat on the swing and started to swing back and forth. He went higher and higher. Tom was very happy.
+But then, something unexpected happened. A big swing came down, right in front of him! Tom was scared, but he kept swinging. He was going very high, even though he was scared. The wind took him across the park. Tom learned that he was brave and had fun on his adventure.
+
+**sample 2**: Once upon a time, there was a pirate named Tom. He was a crazy pirate who loved to joke and make people laugh. Tom had a big hat and a funny hat. He liked to play with the kids on the beach.
+One day, Tom saw a little girl named Sue. Sue was sad because she lost her toy. "Why are you sad?" Tom asked. Sue said, "I lost my toy, and I can't find it." Tom wanted to help Sue, so he said, "I will help you find your toy, Sue."
+Tom and Sue looked for the toy together. They looked under the big rock, behind the waves, and in the sand. At last, they found the toy near a pond
+
+**sample 3**: Once upon a time, there was a pirate. He had a very big boat and he liked to fly it in the sky. Every day he would go out to sea and explore. 
+One day, he decided to go for a dive in the water. He paddled as fast as he could but just as he was going the fastest, he felt something was wrong. He looked down and saw that there was a dead tree in the water, and the tree was very sad. 
+The pirate stopped his dive and looked around. He realised that he shouldn't have dived so far in the dead tree. 
+The moral of this story is that sometimes things that seem bad can turn out to be scary and it's better not to dive
+
+**sample 4**: Once upon a time, there was a pirate. He was a nice pirate, but he was also very filthy. He had been walking on the beach for a long time and was very dirty.
+One day, the pirate found a box. He opened the box and saw a map. The map showed him the way to his boat. He knew the way out and the map would take him to a magical place.
+The pirate got in the warm sun and sailed across the sea. He saw many wonders! He saw a big, beautiful island with lots of animals. He was so excited!
+He got out of the boat and started to explore. He saw a big lake and a tall tree, but he still felt filthy.
+Finally
+
+### train (unseen-mid-freq, corpus_hits=594)
+
+**sample 0**: Once upon a time, there was a little train. The train loved to go fast. It would go up and down the tracks, making steam. The steam was very thick and strong. The train was very happy when it could go fast.
+One day, the train saw a big hill. The train wanted to go up the hill. It started to go up, up, up. The train went faster and faster. It was so much fun!
+But then, the train got tired. It needed to stop. The train stopped and went back down the hill. The train was happy again. It could go fast again. The train went down the hill and went home to rest.
+
+**sample 1**: One day, a little train was going down a tracks. The train had a big engine. The engine was open and strong.
+The train saw a man with a big box. The man said, "Hello, little train. Can you help me move this big box?" The train said, "Yes, I can help you."
+The train went to the man and helped him move the big box. The man said, "Thank you, little train." The train was happy to help. They became good friends and went on more trips together.
+
+**sample 2**: Once upon a time, there was a boy named Tom. He liked to travel with his mom to see new places. One day, they went to the train station. Tom was very excited to see the big train.
+At the train station, Tom met a big, tough dog. The dog was very strong and could run fast. Tom said, "Hello, dog! Can we play?" The dog wagged its tail and barked, "Woof! Woof!"
+Tom and the dog played all day. They ran up and down the tracks. The dog was very happy. At the end of the day, Tom said, "Goodbye, dog! I will come back to play with you!" The dog barked and wagged its tail. Tom and
+
+**sample 3**: Once upon a time, there was a train. The train was very fast. It liked to speed on the tracks. The train was always happy and loved to go fast.
+One day, the train saw a big hill. The train went up the hill, and the train went faster and faster. The train was having so much fun. But then, something unexpected happened. The train saw a big, shiny rock.
+The big, shiny rock was not a rock. It was a magic rock. When the train hit the rock, it turned into a big, bouncy train. The train was so happy! Now, the train could go fast and slow. It was the best train ever.
+
+**sample 4**: Once upon a time, there was a train. This train was not ordinary. It was very big and very fast. The train had a big engine to help it go.
+One day, the train said to the train, "I want to send you on an adventure. I want to see new places and meet new friends." The train said, "Okay, let's go!"
+The train started to go down the tracks. The train went fast and made lots of noise. It went "beep beep!" The train was scared, but it kept going. Soon, the train reached a new place. It found a big park full of new friends. The train was happy and had lots of fun. From that day on, the train
+
+### rainbow (unseen-mid-freq, corpus_hits=706)
+
+**sample 0**: Once upon a time, there was a little girl named Lily. She loved to play outside in the sun. One day, she saw a big rainbow in the sky. The rainbow was very pretty. Lily wanted to find the end of the rainbow.
+Lily asked her friend, Tom, "Do you know where the end of the rainbow is?" Tom said, "No, but let's look together." They walked and walked until they found a big tree. The tree had many leaves that were all colors.
+Lily and Tom looked at the tree and saw the end of the rainbow. They were very happy. They played under the rainbow all day. The end.
+
+**sample 1**: One day, a little dog named Max went for a walk. Max saw a big rainbow in the sky. He wanted to play with the rainbow, so he ran fast to catch it. He ran and ran, trying to catch the rainbow.
+Max met his friend, a cat named Lily. "Lily, come see the big rainbow!" said Max. Lily came running and saw the rainbow too. They both laughed and played under the rainbow.
+Suddenly, the rainbow started to move! It was not a rainbow at all, but a big, round rainbow. Max and Lily were very surprised. They played in the rainbow and had lots of fun. The day was full of surprises, and they were happy to have found a new friend in
+
+**sample 2**: Once upon a time, there was a pretty garden. In the garden, there were many pretty flowers. One day, a little girl named Lily came to the garden. She saw a big, beautiful butterfly. The butterfly had many colors too. Lily was very happy to see the butterfly.
+The butterfly landed on a flower of luxury. It was soft, warm, and had lots of colors. Lily liked it a lot. She wanted to play with the butterfly. So, she tried to catch it. But the butterfly was too fast. It flew away.
+Lily was sad. She went back to the garden to look at the pretty butterfly. She saw it in a big, beautiful butterfly. The butterfly was also beautiful. Lily smiled and
+
+**sample 3**: Once upon a time, there was a little girl named Lily. She had a lot of toys, but she did not like to organize them. She would say, "I hate when my toys are too messy!"
+One day, she went to a big room with many toys. There were many kids, but she was very careful. She put the toys in the right place. She made sure her toys were in their right place.
+Lily saw a big rainbow in the sky. She said, "Wow, that was a big rainbow! I want to organize my toys too!" The other kids agreed and they all started playing together. They found the best toys that were the rainbow's favorite.
+The kids learned that when they worked together
+
+**sample 4**: Once upon a time, there was a little bird who lived in a birdcage. The bird was fine and small. The bird liked to sing and play all day.
+One day, the bird wanted to escape from the birdcage. It flew away and left the birdcage behind. The bird was very happy and played with its friends all day.
+But then, the bird saw a big, beautiful rainbow in the sky. It was so pretty and made the bird want to see it. The bird flew back to the birdcage, and when it opened the door, it was back to its nest. The bird was so happy to be back in its fine birdcage.
+
+### zorp (unseen-oov, corpus_hits=0)
+
+**sample 0**: Once upon a time, there was a little boy named Tim. Tim loved to play with his toy cars. One day, he found a big box in his room. He was very excited to see what was inside.
+Tim opened the box and found a lot of fake toys. He played with the fake cars and made them go fast. But then, he saw a little girl named Sue. Sue was sad because she lost her toy car. Tim wanted to help Sue find her toy car.
+Tim and Sue looked all around the room. They looked under the bed, behind the door, and in the toy box. Finally, they found the toy car under a big pillow. Sue was so happy! She said, "Thank you,
+
+**sample 1**: One day, a little dog named Max went for a walk. Max saw a big red ball. He loved to play with balls. Max ran to the ball and picked it up with his mouth. He was very happy.
+Max saw a little girl named Lily. She was wearing a uniform. Max thought the red ball was his. He wanted to play with it too. Lily said, "Let's play together!" Max was very alert and excited to play with the red ball.
+Lily threw the ball and Max ran to catch it. They took turns playing with the red ball. Max and Lily had lots of fun. They played until the sun went down. When it was time to go home, Max and Lily said goodbye. They
+
+**sample 2**: Once upon a time, there was a little boy named Tim. Tim loved to play outside with his ball. One day, while he was playing, he felt a tickle in his nose. He let out a big sneeze! The sneeze was so big that it blew his ball far away.
+Tim looked for his ball, but he could not find it. He felt sad and started to cry. A compassionate girl named Lily saw Tim crying. She wanted to help him. Lily said, "I will help you find your ball, Tim."
+Lily and Tim looked all around the park. They looked under the slide, in the sandbox, and behind the trees. They could not find the ball anywhere. Tim stopped crying and started to laugh.
+
+**sample 3**: Once upon a time, there was a little girl named Lily. She had a lot of toys, but she had a lot of junk in her room. Lily did not like her junk. She thought it was dull.
+One day, Lily saw a soft, little bunny. The bunny said, "Please help me find my friends." Lily wanted to help the bunny, so she asked, "What can I do to help you?"
+The bunny said, "I can't find my friends. My friends are lost." So, Lily started to look for the bunny's friends. They looked in the trees, under the rocks, and in the bushes. They could not find the bunny's friends.
+After a while, Lily found the
+
+**sample 4**: Once upon a time, there was a little train who loved to go on journeys. One day, the train set out on a long adventure and came across a big building. As it got closer, the train began to notice a huge box. 
+The little train wondered what was inside the box and so it decided to open it. After a few moments, the train finally opened the box. Inside was an enormous pile of coal! The train was amazed by the coal and couldn't believe what had just happened. 
+The train decided to move off into the coal pile, away from the building and the creatures. The train moved slowly but surely, until it reached a place where it could take the coal back to its family.
